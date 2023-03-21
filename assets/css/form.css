@@ -1,0 +1,39 @@
+.registerForm{
+    height: 151px;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+
+.Form-element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+}
+
+
+.Form-element input{
+    width: 50%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.Form-element input:focus{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    outline:none;
+    border:1px solid royalblue;
+}
+.Form-element h3{
+    color:#fff;
+}
+.page-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}

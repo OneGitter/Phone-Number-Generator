@@ -4,9 +4,15 @@
         <title>
             <%= locals.title%>
         </title>
+        <link rel="stylesheet" href="/css/list.css">
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="stylesheet" href="/css/header.css">
       </head>
       <body>
-
+        <%- include('_header.ejs') %>
+        <form method="post" action="/delete">
+          <button>Clear All</button>
+        </form>
         <div>
           <%- include('_list') %>
         </div>

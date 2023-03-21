@@ -5,19 +5,17 @@
             <%= locals.title%>
         </title>
         <link rel="stylesheet" href="/css/home.css">
+        <link rel="stylesheet" href="/css/form.css">
+        <link rel="stylesheet" href="/css/list.css">
+        <link rel="stylesheet" href="/css/header.css">
       </head>
       <body>
         <%- include('_header') %>
-        <div>
-            <%- include('_form') %>
-        </div>
-        <div class="loader">
-
-        </div>
-
+        <section class="page-body">
+              <%- include('_form') %>
+        </section>
         <div>
           <%- include('_list') %>
         </div>
       </body>
     </html>
-  

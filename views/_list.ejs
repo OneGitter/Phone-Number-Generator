@@ -1,31 +1,26 @@
+
 <% if (phone_list.length > 0 ) { %>
- <div>
-    <div>
-        name
-    </div>
-    <div>
-        phone
-    </div>
- </div>
+ <table class="center" cellspacing="2">
+    <thead>
+        <th>
+            name
+        </th>
+        <th>
+            phone
+        </th>
+    </thead>
 <% } %>
-
-<div>
-
-    <ul>
-        
+<tbody>
         <% for (let i of phone_list) { %>
-            <div class="phonebook"> 
-                <li>
-                    <div>
-                        <div class="name">
-                            <%= i.name %>
-                        </div>
-                        <div class="phone">
-                            <%= i.phone %>
-                        </div>
-                    </div>
-                </li>
-            </div>
+            
+                <tr>
+                    <td>
+                        <%= i.name %>
+                    </td>
+                    <td>
+                        <%= i.phone %>
+                    </td>
+                </tr>
             <% } %>
-        </ul>
-    </div>
+</tbody>
+</table>

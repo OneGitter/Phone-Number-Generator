@@ -1,0 +1,31 @@
+.header-layout{
+    background: #0E3386;
+    padding: 5px 9px 2px 8px;
+}
+
+.header-navbar{
+    display: flex;
+    align-items: center;
+}
+
+.mini-logo{
+    flex: 1 0 auto;
+}
+.mini-logo span a{
+    font-size:18px;
+    text-decoration:none;
+    font-weight:600;
+    color:#fff;
+}
+
+
+.links ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color:#fff;
+}

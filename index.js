@@ -12,12 +12,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('assets'));
 
-let arr = [
-  {
-    name: 'Hello',
-    phone: '12345'
-  }
-];
+let arr = [];
 
 
 // Serve HTML form for generating phonebook entries
@@ -44,6 +39,8 @@ app.post('/generate', (req, res) => {
 
   })
 });
+
+
 
 // Retrieve phonebook entries from MongoDB and display them in a table
 app.get('/phonebook', (req, res) => {
