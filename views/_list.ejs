@@ -1,0 +1,31 @@
+<% if (phone_list.length > 0 ) { %>
+ <div>
+    <div>
+        name
+    </div>
+    <div>
+        phone
+    </div>
+ </div>
+<% } %>
+
+<div>
+
+    <ul>
+        
+        <% for (let i of phone_list) { %>
+            <div class="phonebook"> 
+                <li>
+                    <div>
+                        <div class="name">
+                            <%= i.name %>
+                        </div>
+                        <div class="phone">
+                            <%= i.phone %>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <% } %>
+        </ul>
+    </div>
